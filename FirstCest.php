@@ -9,6 +9,7 @@ class FirstCest
 {
     public function _before(AcceptanceTester $I)
     {
+	    $I->maximizeWindow();
     }
 
     // tests
