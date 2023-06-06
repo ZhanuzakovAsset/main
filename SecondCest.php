@@ -8,7 +8,9 @@ use Tests\Support\AcceptanceTester;
 class SecondCest
 {
     public function _before(AcceptanceTester $I)
-    {   $I->amOnPage('/home');
+    {      
+	    $I->maximizeWindow();
+	    $I->amOnPage('/home');
 		$I->waitForText('Войти');
         $I->click('body button:nth-child(3)');
 		$I->waitForText('Вход');
